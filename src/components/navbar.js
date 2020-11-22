@@ -41,7 +41,7 @@ const MyNav = styled.nav`
   top: 0;
   width: 100%;
   margin-right: -9em;
-
+  z-index:100;
   background-color: rgb(228, 225, 225);
   color: black;
   font-size: large;
@@ -82,9 +82,11 @@ const MyNav = styled.nav`
     color: ;
   }
   @media screen and (max-width: 450px) {
+
     margin-top: -2em;
-    margin-left: -1em;
-    margin-right: -0.5em;
+    margin-left: -0.2em;
+    margin-right: -5em;
+   
     ul li {
       display: inline-block;
       padding: 0.5em 0.9em 0em 0em;
@@ -93,6 +95,15 @@ const MyNav = styled.nav`
 
     .hlist {
       display: none;
+    }
+
+    .logo {
+      padding-right: 4em;
+      font-size: larger;
+    }
+    #icon {
+      font-weight: bolder;
+      font-size: larger;
     }
   }
   @media screen and (min-width: 450px) {
